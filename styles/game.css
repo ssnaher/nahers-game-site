@@ -3,12 +3,10 @@
 
 * {
     font-family: 'Work Sans', sans-serif;
-
 }
 
 /* Shared Styles */
 span {
-
     color: rgb(249, 79, 164);
 }
 
@@ -17,16 +15,20 @@ span {
 
 /* nav part styles */
 
+/* header{
+    padding: 40px 240px;
+} */
 .nav-part {
+    margin: 20px 0;
+    padding: 40px 240px;
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
 }
 
 .logo-part,
 .menu-part {
 
-    display: inline-flex;
+    display: flex;
     gap: 20px;
 }
 
@@ -41,6 +43,18 @@ span {
     flex-shrink: 0;
 }
 
+.menu-part p {
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.follow {
+    border-radius: 8px;
+    padding: 5px 25px;
+    background: rgba(11, 2, 35, 0.10);
+}
+
 /* banner part styles */
 
 .banner-part {
@@ -49,6 +63,7 @@ span {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 120px;
 }
 
 .banner-content h2 {
@@ -70,6 +85,9 @@ span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.banner-img img{
+    width: 100%;
+ }
 
 
 .btn-pink {
@@ -96,4 +114,78 @@ span {
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
+}
+
+
+/* main section styles */
+.fun-section {
+    margin-bottom: 120px;
+}
+
+.fun-title {
+    text-align: center;
+
+}
+
+.fun-title h3 {
+    color: #0B0223;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+
+.fun-title span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+
+.fun-img {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.fun-img div {
+    margin: 0 12px;
+}
+
+/* Media Query */
+/* Mobile devices */
+
+@media screen and (max-width: 576px) {
+ .nav-part{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 ;
+ }
+ .menu-part{
+    flex-direction: column;
+    justify-content: center;
+text-align: center;
+ }
+ .logo-part{
+    justify-content: center;
+ }
+ .follow{
+    margin: 0 auto;
+ }
+ .banner-part{
+    flex-direction: column-reverse;
+    background-image: none;
+ }
+ .banner-content{
+    background-image: url('/images/Group\ 14.png');
+    background-repeat: no-repeat;
+ }
+ body{
+    margin: 0 60px;
+ }
+ 
 }
