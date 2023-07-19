@@ -386,25 +386,41 @@ footer div i{
     .banner-content {
         background-image: url('/images/Group\ 14.png');
         background-repeat: no-repeat;
+        background-size: contain;
     }
     .banner-content h3{
         font-size: 72px;
     }
     .banner-content h2{
-        h2{
             font-size: 32px;
-        }
+    }
+
+    .btn-pink, .btn-blue{
+        font-size: 12px;
     }
 
     body {
         margin: 0 60px;
     }
 
+    .fun-title h3, .fun-title span{
+        font-size: 32px;
+    }
     .fun-img{
         display: flex;
         flex-direction: column;
     }
 
+    .play-content h3{
+        font-size: 32px;
+        text-align: center;
+        line-height: 48px;
+    }
+
+    .play-content p{
+        text-align: center;
+        font-size: 14px;
+    }
     .play-section{
         flex-direction: column;
     }
