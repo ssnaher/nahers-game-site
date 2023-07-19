@@ -3,10 +3,11 @@
 
 * {
     font-family: 'Work Sans', sans-serif;
-
-    
 }
 
+img{
+    max-width: 100%;
+}
 
 /* Shared Styles */
 span {
@@ -356,6 +357,7 @@ footer div i{
 /* Mobile devices */
 
 @media screen and (max-width: 425px) {
+    
     .nav-part {
         flex-direction: column;
         justify-content: center;
@@ -385,6 +387,14 @@ footer div i{
         background-image: url('/images/Group\ 14.png');
         background-repeat: no-repeat;
     }
+    .banner-content h3{
+        font-size: 72px;
+    }
+    .banner-content h2{
+        h2{
+            font-size: 32px;
+        }
+    }
 
     body {
         margin: 0 60px;
@@ -399,15 +409,20 @@ footer div i{
         flex-direction: column;
     }
 
-    .category-section{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    .pinky{
+        width: 180px;
+        bottom: 160px;
+        left: 50px;
     }
     .top-5, .bottom-4{
-        grid-column: span 3;
+        grid-template-columns: repeat(3, 1fr);
     }
     .top-5 div span, .bottom-4 div span{
         font-size: 12px;
+    }
+
+    .top-5 div img{
+        width: 24px;
     }
 
    
