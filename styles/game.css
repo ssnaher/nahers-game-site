@@ -425,10 +425,14 @@ footer div i{
         flex-direction: column;
     }
 
-    .pinky{
+    .big-one{
+        width: 250px;
+    }
+
+    .pinky {
         width: 180px;
         bottom: 160px;
-        left: 50px;
+        left: 0px;
     }
     .top-5, .bottom-4{
         grid-template-columns: repeat(3, 1fr);
@@ -441,5 +445,21 @@ footer div i{
         width: 24px;
     }
 
+    .footer-menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-text{
+        display: grid;
+    }
+
+    .footer div i{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .big-one{
+        width: 250px;
+    }
    
 }
