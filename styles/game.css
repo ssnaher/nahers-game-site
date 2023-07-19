@@ -3,6 +3,8 @@
 
 * {
     font-family: 'Work Sans', sans-serif;
+   
+    
 }
 
 /* Shared Styles */
@@ -29,6 +31,7 @@ span {
 .menu-part {
 
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -157,6 +160,11 @@ span {
     margin: 0 12px;
 }
 
+.fun-img div img{
+    width: 100%;
+}
+
+
 /* Play section */
 .play-section {
     display: flex;
@@ -185,32 +193,33 @@ span {
 
 }
 
-.play-img img {
+.big-one {
     display: block;
+    margin-left: 144px;
 }
 
 .pinky {
     position: relative;
     bottom: 270px;
-    right: 144px;
 }
 
 /* Category Section Styles */
 .category-section {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-    padding: 120px 240px;
+    padding: 120px 40px;
 }
 
-.top-5,
+/* .top-5,
 .bottom-4 {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
+} */
+.top-5{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
-
-.top-5 div,
-.bottom-4 div {
-
+.top-5 div {
     border: 1px solid white;
     background-color: #FFF;
     border-radius: 50px;
@@ -223,7 +232,7 @@ span {
     justify-content: center;
 }
 
-.top-5 div:hover, .bottom-4 div:hover {
+.top-5 div:hover {
     border: 1px solid rgb(253, 64, 159);
     cursor: pointer;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
@@ -233,13 +242,11 @@ span {
 
 }
 
-.top-5 div img,
-.bottom-4 div img {
+.top-5 div img {
     margin-right: 15px;
 }
 
-.top-5 div span,
-.bottom-4 div span {
+.top-5 div span {
     color: #0B0223;
     width: 220px;
     font-size: 20px;
@@ -268,10 +275,39 @@ span {
 } */
 
 
+
+/* Footer styles */
+footer{
+    background: #0B0223;
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: center;
+}
+.footer-menu li{
+    list-style: none;
+    margin: 0 30px;
+}
+footer div i{
+    font-size: 24px;
+    margin: 40px 20px;
+}
+.footer-text{
+    display: flex;
+    justify-content: center;
+}
+.footer-text li{
+    list-style: none;
+    margin: 15px 30px;
+}
 /* Media Query */
 /* Mobile devices */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 425px) {
     .nav-part {
         flex-direction: column;
         justify-content: center;
@@ -306,4 +342,19 @@ span {
         margin: 0 60px;
     }
 
+    .fun-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .play-section{
+        flex-direction: column;
+    }
+
+    .top-5{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+    }
+
+   
 }
