@@ -463,3 +463,111 @@ footer div i{
     }
    
 }
+
+@media screen and (max-width: 768px) {
+    
+    .nav-part {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .menu-part {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo-part {
+        justify-content: center;
+    }
+
+    .follow {
+        margin: 0 auto;
+    }
+
+    .banner-part {
+        flex-direction: column-reverse;
+        background-image: none;
+    }
+
+    .banner-content {
+        background-image: url('/images/Group\ 14.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .banner-content h3{
+        font-size: 72px;
+    }
+    .banner-content h2{
+            font-size: 32px;
+    }
+
+    .btn-pink, .btn-blue{
+        font-size: 12px;
+    }
+
+    body {
+        margin: 0 60px;
+    }
+
+    .fun-title h3, .fun-title span{
+        font-size: 32px;
+    }
+    .fun-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .play-content h3{
+        font-size: 32px;
+        text-align: center;
+        line-height: 48px;
+    }
+
+    .play-content p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .play-section{
+        flex-direction: column;
+    }
+
+    .big-one{
+        width: 250px;
+    }
+
+    .pinky {
+        width: 180px;
+        bottom: 160px;
+        left: 0px;
+    }
+    .top-5, .bottom-4{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .top-5 div span, .bottom-4 div span{
+        font-size: 12px;
+    }
+
+    .top-5 div img{
+        width: 24px;
+    }
+
+    .footer-menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-text{
+        display: grid;
+    }
+
+    .footer div i{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .big-one{
+        width: 250px;
+    }
+   
+}
