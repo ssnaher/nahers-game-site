@@ -85,9 +85,10 @@ span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.banner-img img{
+
+.banner-img img {
     width: 100%;
- }
+}
 
 
 .btn-pink {
@@ -156,36 +157,153 @@ span {
     margin: 0 12px;
 }
 
+/* Play section */
+.play-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.play-content {
+    text-align: right;
+    margin-bottom: 270px;
+}
+
+.play-content h3 {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.play-content p {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
+.play-img img {
+    display: block;
+}
+
+.pinky {
+    position: relative;
+    bottom: 270px;
+    right: 144px;
+}
+
+/* Category Section Styles */
+.category-section {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 120px 240px;
+}
+
+.top-5,
+.bottom-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-5 div,
+.bottom-4 div {
+
+    border: 1px solid white;
+    background-color: #FFF;
+    border-radius: 50px;
+    padding: 5px;
+    /* padding-right: 10px; */
+    margin: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-5 div:hover, .bottom-4 div:hover {
+    border: 1px solid rgb(253, 64, 159);
+    cursor: pointer;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.top-5 div img,
+.bottom-4 div img {
+    margin-right: 15px;
+}
+
+.top-5 div span,
+.bottom-4 div span {
+    color: #0B0223;
+    width: 220px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* .top-5 div span:hover {
+    cursor: pointer;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+/* .bottom-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-4 div{
+    margin: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+} */
+
+
 /* Media Query */
 /* Mobile devices */
 
 @media screen and (max-width: 576px) {
- .nav-part{
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 ;
- }
- .menu-part{
-    flex-direction: column;
-    justify-content: center;
-text-align: center;
- }
- .logo-part{
-    justify-content: center;
- }
- .follow{
-    margin: 0 auto;
- }
- .banner-part{
-    flex-direction: column-reverse;
-    background-image: none;
- }
- .banner-content{
-    background-image: url('/images/Group\ 14.png');
-    background-repeat: no-repeat;
- }
- body{
-    margin: 0 60px;
- }
- 
+    .nav-part {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .menu-part {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo-part {
+        justify-content: center;
+    }
+
+    .follow {
+        margin: 0 auto;
+    }
+
+    .banner-part {
+        flex-direction: column-reverse;
+        background-image: none;
+    }
+
+    .banner-content {
+        background-image: url('/images/Group\ 14.png');
+        background-repeat: no-repeat;
+    }
+
+    body {
+        margin: 0 60px;
+    }
+
 }
