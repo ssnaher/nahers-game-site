@@ -499,19 +499,15 @@ footer div a{
     }
 
     .menu-part {
-        flex-direction: column;
         justify-content: center;
-        text-align: center;
+        
     }
 
     .logo-part {
         justify-content: center;
     }
 
-    .follow {
-        margin: 0 auto;
-    }
-
+    
     .banner-part {
         flex-direction: column-reverse;
         background-image: none;
