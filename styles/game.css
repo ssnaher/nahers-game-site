@@ -278,6 +278,7 @@ span {
 .top-5{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    padding: 120px 0;
 }
 
 
