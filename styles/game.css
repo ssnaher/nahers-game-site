@@ -7,6 +7,10 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+h1, h2, h3, p{
+    margin: 20px 0;
+}
+
 img{
     max-width: 100%;
 }
@@ -37,7 +41,6 @@ span {
 
 .logo-part,
 .menu-part {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,10 +52,8 @@ span {
 } */
 
 .logo-part img {
-
     width: 70px;
     height: 30px;
-    flex-shrink: 0;
 }
 
 .menu-part p {
@@ -99,7 +100,7 @@ span {
 }
 
 .banner-img img {
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -166,9 +167,12 @@ span {
 }
 
 .fun-img div {
-    margin: 0 12px;
+    margin: 0 auto;
 }
 
+.fun-img div p{
+    text-align: center;
+}
 .fun-img div img{
     width: 100%;
 }
@@ -253,21 +257,20 @@ span {
 }
 
 .big-one {
-    width: 100%;
+    max-width: 100%;
     display: block;
-    margin-left: 144px;
 }
 
 .pinky {
-    width: 100%;
+    max-width: 50%;
     position: relative;
-    bottom: 270px;
+    bottom: 280px;
+    left: -130px;
 }
 
 /* Category Section Styles */
 .category-section {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-    display: grid;
   
 }
 
@@ -278,7 +281,7 @@ span {
 }
 
 
-.top-5 div, .bottom-4 div {
+.top-5 div {
     border: 1px solid white;
     background-color: #FFF;
     border-radius: 50px;
@@ -291,7 +294,7 @@ span {
     justify-content: center;
 }
 
-.top-5 div:hover, .bottom-4 div:hover {
+.top-5 div:hover {
     border: 1px solid rgb(253, 64, 159);
     cursor: pointer;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
@@ -301,11 +304,11 @@ span {
 
 }
 
-.top-5 div img, .bottom-4 div img {
+.top-5 div img {
     margin-right: 15px;
 }
 
-.top-5 div span, .bottom-4 div span {
+.top-5 div span {
     color: #0B0223;
     font-size: 20px;
     font-weight: 600;
@@ -345,6 +348,7 @@ footer{
 .footer-menu{
     display: flex;
     justify-content: center;
+    margin: 20px 0
 }
 .footer-menu li{
     list-style: none;
@@ -361,6 +365,7 @@ footer div a{
 .footer-text{
     display: flex;
     justify-content: center;
+    margin: 20px 0
 }
 .footer-text li{
     list-style: none;
@@ -369,7 +374,7 @@ footer div a{
 /* Media Query */
 /* Mobile devices */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 576px) {
     
     .nav-part {
         flex-direction: column;
@@ -424,6 +429,10 @@ footer div a{
         flex-direction: column;
     }
 
+    .fun-img div p{
+        text-align: center;
+        font-size: 14px;
+    }
     .play-content h3{
         font-size: 32px;
         text-align: center;
@@ -439,13 +448,13 @@ footer div a{
     }
 
     .big-one{
-        width: 250px;
+        max-width: 100%;
     }
 
     .pinky {
-        width: 180px;
+        max-width: 100%;
         bottom: 160px;
-        left: 0px;
+        left: -75px;
     }
     .top-5, .bottom-4{
         grid-template-columns: repeat(3, 1fr);
@@ -478,7 +487,11 @@ footer div a{
 }
 
 @media screen and (max-width: 768px) {
-    
+
+    a, p{
+        font-size: 12px;
+        margin: 20px 0;
+    }
     .nav-part {
         flex-direction: column;
         justify-content: center;
@@ -505,9 +518,10 @@ footer div a{
     }
 
     .banner-content {
-        background-image: url('/images/Group\ 14.png');
+        background-image: url(/images/Group\ 14.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
+        width: 100%;
     }
     .banner-content h3{
         font-size: 72px;
@@ -551,9 +565,9 @@ footer div a{
     }
 
     .pinky {
-        width: 180px;
-        bottom: 160px;
-        left: 0px;
+        max-width: 50%;
+        bottom: 150px;
+        left: -68px;
     }
     .top-5, .bottom-4{
         grid-template-columns: repeat(3, 1fr);
@@ -570,11 +584,17 @@ footer div a{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .footer-icons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     .footer-text{
         display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .footer div i{
+    .footer div{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
